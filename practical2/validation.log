@@ -1,0 +1,7 @@
+2026-07-27 07:52:48,922 - INFO - Customer dataset generated.
+2026-07-27 07:52:48,924 - WARNING - Missing Customer IDs: 1
+2026-07-27 07:52:48,925 - WARNING - Missing Emails: 1
+2026-07-27 07:52:48,925 - WARNING - Invalid Emails: 2
+2026-07-27 07:52:48,925 - WARNING - Invalid Phone Numbers: 1
+2026-07-27 07:52:48,925 - WARNING - Duplicate Records: 1
+2026-07-27 07:52:48,925 - INFO - Data validation completed.

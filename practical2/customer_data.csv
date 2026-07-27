@@ -1,0 +1,101 @@
+customer_id,name,email,phone,city,state,country,age,registration_date
+1,Robin Hall,christopher15@example.net,712.281.6976x983,Cunninghamfort,Arkansas,Honduras,40,2026-05-21
+2,Raymond Harrington,kevinwilson@example.com,468-792-9134,Ramseyshire,Montana,Guernsey,45,2026-01-10
+3,Terry Mcbride,kristy37@example.net,001-847-782-6754x5413,Robertville,Vermont,Rwanda,47,2025-01-24
+4,Marcus Hubbard,matthewblack@example.org,+1-575-450-6676x0852,Smithberg,Michigan,Lao People's Democratic Republic,40,2025-11-07
+5,Frederick Graham,brandy52@example.com,209-843-8804,Calhounfort,Michigan,North Macedonia,37,2025-08-17
+6,Catherine Randall,johnstonjustin@example.net,+1-391-440-0278x6931,Stacyfurt,Montana,Turks and Caicos Islands,42,2026-07-19
+7,Laurie Hale,denisesantos@example.com,(936)307-3715,West Laurafort,Vermont,Singapore,29,2025-08-24
+8,Zachary Carey,heathernoble@example.net,+1-756-433-2886x6262,North Gina,New Mexico,American Samoa,42,2026-03-01
+9,Anthony Hansen,michaelperry@example.org,(794)470-7033,East Jasonhaven,New York,Andorra,22,2025-03-11
+10,Tara Cannon MD,george62@example.net,637-342-2934x14950,South Michaelstad,Alabama,Lebanon,58,2024-12-27
+11,Jessica Herrera,ihowell@example.org,+1-751-856-8107x511,Victoriaport,Idaho,Western Sahara,44,2026-06-27
+12,Jessica Thomas,johnprice@example.net,289-911-4122,Rodriguezfurt,Ohio,Canada,46,2025-07-01
+13,Ryan Hill,ahamilton@example.net,948.945.0472,Katelynfort,Florida,Iceland,30,2024-11-10
+14,Donald Martinez,stacey80@example.org,7135073727,Jameston,Oklahoma,Germany,38,2026-06-15
+15,Makayla Galvan,sullivanchristopher@example.org,(484)233-1848x75714,Fullerview,Nevada,Tonga,35,2026-05-30
+16,Debra Lee,wwallace@example.net,306.503.9289,Sheriland,California,Argentina,56,2026-07-16
+17,Michael Reed,ssmith@example.com,001-668-805-3251x44727,North Christopher,Massachusetts,Costa Rica,40,2026-06-25
+18,Sean Fowler,lesliebaldwin@example.com,6433811329,Coreyfurt,North Dakota,Senegal,49,2024-12-30
+19,Corey Davis,garciamatthew@example.com,6989596278,Deleonview,Illinois,Saint Lucia,26,2025-12-21
+20,David Mason,shirley80@example.com,712.588.4512x103,Milesport,South Carolina,Mauritania,46,2025-03-20
+21,John Lopez,harveycarrie@example.org,587-294-1612,South Rachel,Tennessee,Poland,42,2025-05-04
+22,John Lucero,allenwilliam@example.net,(978)344-7067x48623,Traciemouth,Iowa,Faroe Islands,27,2026-06-10
+23,Sheri Ross,wilkinsbarbara@example.net,001-854-647-7398x695,Anitaborough,South Dakota,Pitcairn Islands,36,2024-08-15
+24,Mark Dickson,colejoseph@example.net,001-545-628-4247,Michaelbury,Louisiana,Bahrain,26,2024-10-11
+25,Michelle Peck,timothy14@example.com,333.327.6845x7588,Port Stephaniehaven,Alabama,Iraq,55,2024-12-04
+26,Amanda Daniels,dhill@example.com,001-641-377-3406x3684,Port Kimberly,West Virginia,Western Sahara,18,2025-03-30
+27,Daniel Atkins,robertsalazar@example.com,576-766-6946x96751,Port Matthewland,Rhode Island,Sri Lanka,45,2024-10-15
+28,Stacie Cunningham,zcrawford@example.net,824.666.0217x86237,East Wendyport,Georgia,Nigeria,37,2025-06-30
+29,Jessica Giles,mcintyrebridget@example.com,+1-919-606-4315x454,West Susan,New Jersey,United Arab Emirates,22,2025-12-23
+30,Matthew Hill,hughescarol@example.net,001-911-203-7900,Billyhaven,Maine,Bulgaria,51,2026-04-09
+31,Christine Johnson,todd64@example.com,990-531-7557x25642,Hayesburgh,South Dakota,Angola,58,2026-01-01
+32,Stephen Foster,walterscarolyn@example.org,(918)534-1441,Mackview,Pennsylvania,Niue,21,2024-12-03
+33,Joshua Meyers,rwilkinson@example.net,+1-890-823-9080x4861,West Ryan,South Carolina,El Salvador,40,2025-11-27
+34,Patricia Jones MD,hjackson@example.net,(249)236-1605,Josephside,Utah,Botswana,37,2024-10-06
+35,Christopher Anderson,maddenamy@example.net,961.651.3974x864,Charleshaven,Ohio,Belarus,59,2025-04-27
+36,Cheryl Greene,ghowe@example.org,665-280-0387,South Kayla,Montana,Bahrain,57,2024-07-27
+37,Tyler Brown,josephdrake@example.com,608.807.2374,Whitehaven,Indiana,Antigua and Barbuda,22,2026-03-20
+38,Mary Turner,cameronmatthew@example.net,6585282379,Jacquelinemouth,Alaska,Benin,40,2026-05-14
+39,Troy Farrell,christopher95@example.org,2275901705,Leeberg,California,Suriname,51,2025-03-12
+40,Timothy Duke,jonesrachel@example.org,+1-309-281-6220x057,West Victoria,Minnesota,Wallis and Futuna,35,2025-05-11
+41,Sean Le,robindurham@example.com,442.980.6902,East Elizabeth,Arkansas,Moldova,27,2026-01-27
+42,Susan Murphy,kthompson@example.org,(249)649-9583x39162,Garrisonberg,Pennsylvania,Eritrea,53,2025-07-27
+43,Yolanda Johnson,jessicaanderson@example.net,483-541-2955x36641,North Travisville,Hawaii,Cocos (Keeling) Islands,45,2025-03-16
+44,Sara Mcdonald,shannonfields@example.com,(800)862-7595x61774,Gonzalesborough,North Carolina,Jordan,47,2025-03-13
+45,Amanda Davis,leejennifer@example.net,(319)360-7195x2402,Beverlychester,New Mexico,Malaysia,38,2025-07-13
+46,Carl Gamble,carlsonmichelle@example.org,632.540.0761,New Daniel,Connecticut,Japan,35,2025-11-19
+47,Nicholas Brandt,parkerlisa@example.com,(207)583-8013,East Melissa,Indiana,Lebanon,38,2026-06-13
+48,Danielle Thompson,elizabethgalvan@example.net,(636)459-5465x987,Matthewmouth,Maine,Guinea-Bissau,18,2025-05-11
+49,Alexander Morton,lindseystevens@example.net,882-840-9617x8305,South Brianside,Alaska,United States Minor Outlying Islands,54,2025-04-29
+50,David Carroll,ugillespie@example.org,677.587.5269,Jenniferland,Alaska,Vanuatu,27,2026-05-29
+51,Alan Diaz,justin63@example.org,354.868.4745x03045,North Elizabethmouth,New York,Cuba,55,2025-06-08
+52,Amanda Reyes,middletonaaron@example.org,(794)967-1674x793,South Garyhaven,Idaho,Panama,52,2025-12-27
+53,Julia Kennedy,aaronmoreno@example.com,(240)489-3289x44250,Port Jenniferfurt,North Carolina,Qatar,60,2024-11-25
+54,Marie Rhodes,sallen@example.org,812-750-1628x59371,Scottmouth,Mississippi,Vanuatu,21,2025-07-13
+55,Jacqueline Casey,williamslinda@example.net,001-811-759-5549x55434,Lake Jacqueline,Washington,Niger,55,2026-07-09
+56,Lauren Porter,diazmark@example.com,(712)454-9630,North Kevinton,Wisconsin,Belarus,23,2026-01-17
+57,Kimberly Hoover,kristin06@example.com,551.885.5862,New Cynthiahaven,Rhode Island,Seychelles,32,2024-12-23
+58,Chad Kerr,claudiaking@example.com,001-331-347-3345x6202,Lake Lauraville,South Dakota,Lebanon,36,2024-11-25
+59,Christina Price,rjones@example.org,(323)914-5346,West Tiffany,South Dakota,Jersey,60,2025-06-06
+60,Reginald Howe,wcombs@example.net,(915)286-7889x6748,Davidsonfort,Wyoming,Lesotho,33,2025-04-20
+61,Amanda Carlson,thompsonwilliam@example.com,001-875-878-5679,Huffmanfurt,Texas,Puerto Rico,50,2025-06-01
+62,Jaime Sanchez,lrogers@example.org,(821)386-8501,Morganshire,Oregon,Guam,49,2025-12-08
+63,Jillian Ramirez,stanley21@example.com,447-346-9894,East Louisburgh,Hawaii,Haiti,46,2025-06-04
+64,Felicia Gonzalez,bruce06@example.org,999-728-1998x70789,Mooreton,New York,Venezuela,48,2025-03-03
+65,Allison Hill,thomasrenee@example.org,001-916-727-5648x201,Gibsonside,Nebraska,Zambia,34,2025-02-21
+66,Courtney Allen,christiansamantha@example.com,954.736.9809,East Elizabeth,Nevada,Bulgaria,24,2024-11-04
+67,Amanda Hudson,adamscynthia@example.com,+1-442-752-5899x41475,Kimport,Montana,Korea,53,2025-03-26
+68,Ashley Frazier,krodriguez@example.net,+1-853-445-3358x391,Romanside,Michigan,Angola,34,2026-01-05
+69,Zachary Nunez,warnerblake@example.net,303.625.8234x74044,Sanderschester,Delaware,Western Sahara,34,2024-12-17
+70,Carly Smith,sandovalrobert@example.org,5392948096,Jameston,Vermont,Kenya,58,2024-11-06
+71,Joseph Freeman,qwarner@example.net,512.477.8540x97451,Brayburgh,South Dakota,Micronesia,18,2024-11-19
+72,Kevin Woods,psanchez@example.com,(458)635-6565x978,West William,Florida,Tuvalu,31,2025-08-08
+73,Lisa Ruiz,marshallamanda@example.net,8185224924,South Wyatt,Hawaii,Ethiopia,45,2025-02-19
+74,Haley Benson,claytonmanuel@example.org,+1-349-721-3376x842,Phelpsberg,Utah,Ghana,22,2024-10-29
+75,Jeffrey Thompson,jimmy52@example.net,4279099252,Michaelmouth,South Dakota,Burundi,45,2024-08-19
+76,Daniel Mcintyre,lindamalone@example.org,8274204277,Alexandershire,Iowa,Kiribati,43,2024-10-09
+77,Mariah Maxwell,colerenee@example.net,607-485-3620,Sextonport,Michigan,Oman,50,2025-04-13
+78,Juan Valdez,robertstimothy@example.net,474-865-3195x50816,North Micheleland,Alaska,Ethiopia,22,2024-11-23
+79,Teresa Wilson,christopherrussell@example.net,3568421571,Port Brandon,Alabama,Marshall Islands,21,2025-12-11
+80,Christina Nelson,kayla84@example.org,(247)974-2863x87957,Sabrinafort,New Hampshire,Indonesia,31,2025-04-28
+81,James Short,kimberlyzimmerman@example.org,(675)210-7387x0826,New Anthony,Texas,Cape Verde,26,2026-04-23
+82,Laura Mullins,jennifercompton@example.net,(290)771-4139x287,South Victoriaberg,Louisiana,Tuvalu,50,2026-06-22
+83,Sarah Hart,westpaul@example.net,+1-837-261-1036x3565,Port Rhondaland,West Virginia,Svalbard & Jan Mayen Islands,27,2025-04-10
+84,Bianca Garcia,josephvaldez@example.com,(937)288-3576x413,Krystalchester,Rhode Island,Hong Kong,35,2025-12-02
+85,Aaron Mcmahon,suzannebradshaw@example.com,605-488-6135,Grahamborough,North Carolina,Uruguay,58,2025-01-16
+86,Joshua Jacobs,john45@example.org,(972)456-6024,Lake Heather,Minnesota,Sudan,30,2025-04-02
+87,Brian Welch,kristopherbates@example.net,4962098239,Frenchchester,North Carolina,Congo,59,2025-11-13
+88,Theresa Stewart,ugonzales@example.org,801.605.2219x720,Garytown,Texas,Libyan Arab Jamahiriya,49,2024-11-09
+89,Tony Estes,zacharybuckley@example.net,+1-811-785-9923x5522,Kimchester,Colorado,Croatia,43,2025-05-01
+90,Karen Lopez,martin95@example.net,383.234.3884x58334,Nicholasstad,Tennessee,Saint Pierre and Miquelon,38,2025-12-16
+91,Cheryl Dodson,williamkennedy@example.net,274.260.2579,South Tammyfurt,South Dakota,Guam,51,2025-03-23
+92,Crystal Porter,anthony52@example.net,001-205-829-5994x22568,New Joeshire,Rhode Island,El Salvador,27,2026-02-04
+93,Kelly Cantrell,zvillarreal@example.net,+1-227-602-5557x28496,Schroederfort,Alabama,Timor-Leste,55,2026-02-26
+94,Austin Hicks,caroline68@example.org,200-964-6560,Transhire,Kansas,Tokelau,45,2024-10-31
+95,Lisa Thompson,tyler98@example.net,001-584-996-4464x6808,New Sharonberg,Texas,Sao Tome and Principe,50,2026-05-16
+96,Jacob Phillips,tylerjohnson@example.org,905.243.1681x5029,South Seanhaven,Washington,Cameroon,51,2025-09-09
+97,John Mayer,mitchell84@example.com,+1-435-890-5904,Davidmouth,Missouri,Venezuela,51,2026-02-05
+98,Kenneth Thompson,david76@example.net,339.902.3919x8403,New Anthony,North Carolina,Monaco,40,2026-06-27
+99,Vincent Johnson,melissa25@example.com,001-679-920-9642x9167,Gibbsland,Vermont,Lao People's Democratic Republic,49,2025-12-16
+100,Miguel Rodriguez,beverly45@example.org,680-555-1144,South Samuelberg,Vermont,Belize,57,2025-05-06

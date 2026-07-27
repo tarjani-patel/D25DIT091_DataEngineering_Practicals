@@ -1,0 +1,7 @@
+
+HOST=localhost
+PORT=5432
+DATABASE=customer_db
+USERNAME=admin
+PASSWORD=
+TIMEOUT=abc
