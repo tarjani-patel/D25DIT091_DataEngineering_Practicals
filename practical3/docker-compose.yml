@@ -1,0 +1,112 @@
+services:
+
+  redpanda-0:
+    image: docker.redpanda.com/redpandadata/redpanda:v25.2.1
+    container_name: redpanda-0
+    command:
+      - redpanda
+      - start
+      - --overprovisioned
+      - --smp
+      - "1"
+      - --memory
+      - 1G
+      - --reserve-memory
+      - 0M
+      - --check=false
+      - --node-id
+      - "0"
+      - --kafka-addr
+      - internal://0.0.0.0:9092,external://0.0.0.0:19092
+      - --advertise-kafka-addr
+      - internal://redpanda-0:9092,external://localhost:19092
+      - --pandaproxy-addr
+      - internal://0.0.0.0:8082,external://0.0.0.0:18082
+      - --advertise-pandaproxy-addr
+      - internal://redpanda-0:8082,external://localhost:18082
+      - --rpc-addr
+      - redpanda-0:33145
+      - --advertise-rpc-addr
+      - redpanda-0:33145
+    ports:
+      - "19092:19092"
+      - "18082:18082"
+    volumes:
+      - redpanda-0:/var/lib/redpanda/data
+
+  redpanda-1:
+    image: docker.redpanda.com/redpandadata/redpanda:v25.2.1
+    container_name: redpanda-1
+    command:
+      - redpanda
+      - start
+      - --overprovisioned
+      - --smp
+      - "1"
+      - --memory
+      - 1G
+      - --reserve-memory
+      - 0M
+      - --check=false
+      - --node-id
+      - "1"
+      - --kafka-addr
+      - internal://0.0.0.0:9092,external://0.0.0.0:19093
+      - --advertise-kafka-addr
+      - internal://redpanda-1:9092,external://localhost:19093
+      - --pandaproxy-addr
+      - internal://0.0.0.0:8082,external://0.0.0.0:18083
+      - --advertise-pandaproxy-addr
+      - internal://redpanda-1:8082,external://localhost:18083
+      - --rpc-addr
+      - redpanda-1:33145
+      - --advertise-rpc-addr
+      - redpanda-1:33145
+      - --seeds
+      - redpanda-0:33145
+    ports:
+      - "19093:19093"
+      - "18083:18083"
+    volumes:
+      - redpanda-1:/var/lib/redpanda/data
+
+  redpanda-2:
+    image: docker.redpanda.com/redpandadata/redpanda:v25.2.1
+    container_name: redpanda-2
+    command:
+      - redpanda
+      - start
+      - --overprovisioned
+      - --smp
+      - "1"
+      - --memory
+      - 1G
+      - --reserve-memory
+      - 0M
+      - --check=false
+      - --node-id
+      - "2"
+      - --kafka-addr
+      - internal://0.0.0.0:9092,external://0.0.0.0:19094
+      - --advertise-kafka-addr
+      - internal://redpanda-2:9092,external://localhost:19094
+      - --pandaproxy-addr
+      - internal://0.0.0.0:8082,external://0.0.0.0:18084
+      - --advertise-pandaproxy-addr
+      - internal://redpanda-2:8082,external://localhost:18084
+      - --rpc-addr
+      - redpanda-2:33145
+      - --advertise-rpc-addr
+      - redpanda-2:33145
+      - --seeds
+      - redpanda-0:33145
+    ports:
+      - "19094:19094"
+      - "18084:18084"
+    volumes:
+      - redpanda-2:/var/lib/redpanda/data
+
+volumes:
+  redpanda-0:
+  redpanda-1:
+  redpanda-2:
