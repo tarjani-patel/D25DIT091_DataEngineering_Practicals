@@ -1,0 +1,8 @@
+retail_analytics:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
+      path: "C:/Users/Tarjani/OneDrive/Pictures/Documents/Notes_SEM5/DE/practical/practical4/warehouse/retail.duckdb"
+      schema: main

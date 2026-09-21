@@ -1,0 +1,45 @@
+version: 2
+
+models:
+
+  - name: retail_sales
+
+    description: "Cleaned retail sales data transformed using dbt."
+
+    columns:
+
+      - name: order_id
+        description: "Unique retail order identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: store_code
+        description: "Standardized store identifier."
+        tests:
+          - not_null
+
+      - name: product
+        description: "Retail product name."
+        tests:
+          - not_null
+
+      - name: category
+        description: "Product category."
+        tests:
+          - not_null
+
+      - name: quantity
+        description: "Quantity sold."
+        tests:
+          - not_null
+
+      - name: unit_price
+        description: "Price per unit."
+        tests:
+          - not_null
+
+      - name: total_amount
+        description: "Calculated total sales amount."
+        tests:
+          - not_null

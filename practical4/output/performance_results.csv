@@ -1,0 +1,3 @@
+Pipeline,Run_1_seconds,Run_2_seconds,Run_3_seconds,Average_seconds
+ETL,0.2949,0.3113,0.3174,0.3078666666666667
+ELT,0.596,0.6243,0.6198,0.6133666666666667

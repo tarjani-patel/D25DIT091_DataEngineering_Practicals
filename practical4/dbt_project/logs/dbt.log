@@ -1,0 +1,686 @@
+[0m13:14:12.728632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018192687230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181904751D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181951B7890>]}
+
+
+============================== 13:14:12.732492 | fd138884-b34b-4006-97c6-986479305593 ==============================
+[0m13:14:12.732492 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:14:12.733158 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'invocation_command': 'dbt debug --profiles-dir .', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Tarjani\\OneDrive\\Pictures\\Documents\\Notes_SEM5\\DE\\practical\\practical4\\dbt_project\\logs'}
+[0m13:14:12.749632 [info ] [MainThread]: dbt version: 1.12.5
+[0m13:14:12.750636 [info ] [MainThread]: python version: 3.14.2
+[0m13:14:12.750929 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m13:14:12.751173 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m13:14:12.838507 [info ] [MainThread]: Using profiles dir at .
+[0m13:14:12.839078 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
+[0m13:14:12.839838 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\dbt_project.yml
+[0m13:14:12.841862 [info ] [MainThread]: adapter type: duckdb
+[0m13:14:12.842640 [info ] [MainThread]: adapter version: 1.11.0
+[0m13:14:12.928269 [info ] [MainThread]: Configuration:
+[0m13:14:12.930203 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:14:12.930649 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:14:12.931605 [info ] [MainThread]: Required dependencies:
+[0m13:14:12.932381 [debug] [MainThread]: Executing "git --help"
+[0m13:14:12.983574 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:14:12.983992 [debug] [MainThread]: STDERR: "b''"
+[0m13:14:12.984323 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:14:12.984817 [info ] [MainThread]: Connection:
+[0m13:14:12.985471 [info ] [MainThread]:   database: retail
+[0m13:14:12.985880 [info ] [MainThread]:   schema: main
+[0m13:14:12.986169 [info ] [MainThread]:   path: C:/Users/Tarjani/OneDrive/Pictures/Documents/Notes_SEM5/DE/practical/practical4/warehouse/retail.duckdb
+[0m13:14:12.986493 [info ] [MainThread]:   config_options: None
+[0m13:14:12.986776 [info ] [MainThread]:   extensions: None
+[0m13:14:12.987086 [info ] [MainThread]:   settings: {}
+[0m13:14:12.987407 [info ] [MainThread]:   external_root: .
+[0m13:14:12.987702 [info ] [MainThread]:   use_credential_provider: None
+[0m13:14:12.988007 [info ] [MainThread]:   attach: None
+[0m13:14:12.988325 [info ] [MainThread]:   filesystems: None
+[0m13:14:12.988655 [info ] [MainThread]:   remote: None
+[0m13:14:12.988967 [info ] [MainThread]:   plugins: None
+[0m13:14:12.989293 [info ] [MainThread]:   disable_transactions: False
+[0m13:14:12.989800 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m13:14:13.185684 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:14:17.414641 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:14:17.415045 [debug] [MainThread]: On debug: select 1 as id
+[0m13:14:17.415316 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:14:17.431881 [debug] [MainThread]: SQL status: OK in 0.017 seconds
+[0m13:14:17.432582 [debug] [MainThread]: On debug: Close
+[0m13:14:17.432867 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:14:17.433305 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:14:17.433984 [debug] [MainThread]: Command `dbt debug` succeeded at 13:14:17.433890 after 4.87 seconds
+[0m13:14:17.434199 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:14:17.434407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181952A3A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001819589F9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018195466F10>]}
+[0m13:14:17.434657 [debug] [MainThread]: Flushing usage events
+[0m13:14:18.629398 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:14:43.936132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2943B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA272291D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2BF23890>]}
+
+
+============================== 13:14:43.939918 | 2097bc8c-cfaa-4400-9bef-82bf9406d4f4 ==============================
+[0m13:14:43.939918 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:14:43.940734 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'log_path': 'C:\\Users\\Tarjani\\OneDrive\\Pictures\\Documents\\Notes_SEM5\\DE\\practical\\practical4\\dbt_project\\logs'}
+[0m13:14:44.246539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2BF92EA0>]}
+[0m13:14:44.301301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2A212030>]}
+[0m13:14:44.303429 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m13:14:44.461149 [debug] [MainThread]: checksum: 22ae401e7488ffb9755335d8734805631512a7879b47bda577b80f9132d64d3a, vars: {}, profile: retail_analytics, target: dev, version: 1.12.5
+[0m13:14:44.462064 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:14:44.462615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2C90C050>]}
+[0m13:14:47.052522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2E2E3890>]}
+[0m13:14:47.122713 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\manifest.json
+[0m13:14:47.151789 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\semantic_manifest.json
+[0m13:14:47.173876 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\osi_document.json
+[0m13:14:47.197419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2E7C2DD0>]}
+[0m13:14:47.197844 [info ] [MainThread]: Found 1 model, 8 data tests, 500 macros
+[0m13:14:47.198695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2E72F520>]}
+[0m13:14:47.200347 [info ] [MainThread]: 
+[0m13:14:47.200857 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:14:47.201220 [info ] [MainThread]: 
+[0m13:14:47.201713 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:14:47.202637 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail'
+[0m13:14:47.241389 [debug] [ThreadPool]: Using duckdb connection "list_retail"
+[0m13:14:47.241747 [debug] [ThreadPool]: On list_retail: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_retail"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail"'
+    
+  
+  
+[0m13:14:47.242016 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:14:47.261621 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m13:14:47.263192 [debug] [ThreadPool]: On list_retail: Close
+[0m13:14:47.263866 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail, now create_retail_main)
+[0m13:14:47.264275 [debug] [ThreadPool]: Creating schema "database: "retail"
+schema: "main"
+"
+[0m13:14:47.269659 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m13:14:47.269975 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail'
+        and type != 'duckdb'
+    
+  
+[0m13:14:47.270186 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:14:47.272310 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m13:14:47.273336 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m13:14:47.273592 [debug] [ThreadPool]: On create_retail_main: BEGIN
+[0m13:14:47.273984 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:14:47.274195 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m13:14:47.274356 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+    
+        create schema if not exists "retail"."main"
+    
+[0m13:14:47.275232 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m13:14:47.275832 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m13:14:47.276028 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m13:14:47.276198 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m13:14:47.276564 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:14:47.276805 [debug] [ThreadPool]: On create_retail_main: Close
+[0m13:14:47.277971 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_main'
+[0m13:14:47.281607 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m13:14:47.281903 [debug] [ThreadPool]: On list_retail_main: BEGIN
+[0m13:14:47.282126 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:14:47.282589 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:14:47.282783 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m13:14:47.282957 [debug] [ThreadPool]: On list_retail_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_retail_main"} */
+select
+      'retail' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail'
+  
+[0m13:14:47.290373 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m13:14:47.291427 [debug] [ThreadPool]: On list_retail_main: ROLLBACK
+[0m13:14:47.291911 [debug] [ThreadPool]: On list_retail_main: Close
+[0m13:14:47.293019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2E818A10>]}
+[0m13:14:47.293387 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:14:47.293602 [debug] [MainThread]: On master: BEGIN
+[0m13:14:47.293787 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:14:47.294274 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:14:47.294515 [debug] [MainThread]: On master: COMMIT
+[0m13:14:47.294752 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:14:47.294935 [debug] [MainThread]: On master: COMMIT
+[0m13:14:47.295336 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:14:47.295549 [debug] [MainThread]: On master: Close
+[0m13:14:47.314535 [debug] [Thread-1 (]: Began running node model.retail_analytics.retail_sales
+[0m13:14:47.315000 [info ] [Thread-1 (]: 1 of 1 START sql table model main.retail_sales ................................. [RUN]
+[0m13:14:47.315785 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.retail_analytics.retail_sales'
+[0m13:14:47.316094 [debug] [Thread-1 (]: Began compiling node model.retail_analytics.retail_sales
+[0m13:14:47.319893 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_analytics.retail_sales"
+[0m13:14:47.321685 [debug] [Thread-1 (]: Began executing node model.retail_analytics.retail_sales
+[0m13:14:47.363593 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_analytics.retail_sales"
+[0m13:14:47.365328 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.retail_sales"
+[0m13:14:47.365677 [debug] [Thread-1 (]: On model.retail_analytics.retail_sales: BEGIN
+[0m13:14:47.365924 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:14:47.366688 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:14:47.366993 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.retail_sales"
+[0m13:14:47.367233 [debug] [Thread-1 (]: On model.retail_analytics.retail_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.retail_sales"} */
+
+    
+
+    create  table
+      "retail"."main"."retail_sales__dbt_tmp"
+  
+    
+    as (
+      SELECT
+    TRIM(CAST(order_id AS VARCHAR)) AS order_id,
+
+    CASE
+        WHEN TRIM(CAST(store_code AS VARCHAR)) = 'OLD01'
+            THEN 'S001'
+
+        WHEN TRIM(CAST(store_code AS VARCHAR)) = 'OLD02'
+            THEN 'S002'
+
+        ELSE TRIM(CAST(store_code AS VARCHAR))
+    END AS store_code,
+
+    TRIM(CAST(product AS VARCHAR)) AS product,
+
+    TRIM(CAST(category AS VARCHAR)) AS category,
+
+    CAST(quantity AS INTEGER) AS quantity,
+
+    CAST(unit_price AS DOUBLE) AS unit_price,
+
+    CAST(quantity AS INTEGER)
+        * CAST(unit_price AS DOUBLE) AS total_amount,
+
+    'retail_sales_raw.csv' AS source_system,
+
+    TRUE AS dbt_processed
+
+FROM retail_sales_staging
+    );
+    
+  
+[0m13:14:47.417810 [debug] [Thread-1 (]: SQL status: OK in 0.050 seconds
+[0m13:14:47.422394 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.retail_sales"
+[0m13:14:47.422770 [debug] [Thread-1 (]: On model.retail_analytics.retail_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.retail_sales"} */
+alter table "retail"."main"."retail_sales__dbt_tmp" rename to "retail_sales"
+[0m13:14:47.425963 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m13:14:47.438973 [debug] [Thread-1 (]: On model.retail_analytics.retail_sales: COMMIT
+[0m13:14:47.439352 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.retail_sales"
+[0m13:14:47.439606 [debug] [Thread-1 (]: On model.retail_analytics.retail_sales: COMMIT
+[0m13:14:47.467103 [debug] [Thread-1 (]: SQL status: OK in 0.027 seconds
+[0m13:14:47.472015 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.retail_sales"
+[0m13:14:47.472376 [debug] [Thread-1 (]: On model.retail_analytics.retail_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.retail_sales"} */
+
+      drop table if exists "retail"."main"."retail_sales__dbt_backup" cascade
+    
+[0m13:14:47.472969 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:14:47.474774 [debug] [Thread-1 (]: On model.retail_analytics.retail_sales: Close
+[0m13:14:47.476558 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2097bc8c-cfaa-4400-9bef-82bf9406d4f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA29B6A620>]}
+[0m13:14:47.477127 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.retail_sales ............................ [[32mOK[0m in 0.16s]
+[0m13:14:47.477815 [debug] [Thread-1 (]: Finished running node model.retail_analytics.retail_sales
+[0m13:14:47.478947 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:14:47.479225 [debug] [MainThread]: On master: BEGIN
+[0m13:14:47.479419 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:14:47.479904 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:14:47.480144 [debug] [MainThread]: On master: COMMIT
+[0m13:14:47.480348 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:14:47.480551 [debug] [MainThread]: On master: COMMIT
+[0m13:14:47.481012 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:14:47.481247 [debug] [MainThread]: On master: Close
+[0m13:14:47.481570 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:14:47.481744 [debug] [MainThread]: Connection 'create_retail_main' was properly closed.
+[0m13:14:47.481890 [debug] [MainThread]: Connection 'list_retail_main' was properly closed.
+[0m13:14:47.482026 [debug] [MainThread]: Connection 'model.retail_analytics.retail_sales' was properly closed.
+[0m13:14:47.482229 [info ] [MainThread]: 
+[0m13:14:47.482670 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.28 seconds (0.28s).
+[0m13:14:47.483378 [debug] [MainThread]: Command end result
+[0m13:14:47.506380 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\manifest.json
+[0m13:14:47.508924 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\semantic_manifest.json
+[0m13:14:47.511482 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\osi_document.json
+[0m13:14:47.517338 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\run_results.json
+[0m13:14:47.517662 [info ] [MainThread]: 
+[0m13:14:47.518182 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:14:47.519053 [info ] [MainThread]: 
+[0m13:14:47.519507 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m13:14:47.520361 [debug] [MainThread]: Command `dbt run` succeeded at 13:14:47.520240 after 3.73 seconds
+[0m13:14:47.520686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2E09CF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA2EB13800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA29B67650>]}
+[0m13:14:47.520988 [debug] [MainThread]: Flushing usage events
+[0m13:14:48.705802 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:15:47.963712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025931A3B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F825310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025934533890>]}
+
+
+============================== 13:15:47.967396 | 6ea22a0b-54d5-442d-bcf4-db85aada3f55 ==============================
+[0m13:15:47.967396 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:15:47.968171 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt test --profiles-dir .', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Tarjani\\OneDrive\\Pictures\\Documents\\Notes_SEM5\\DE\\practical\\practical4\\dbt_project\\logs'}
+[0m13:15:48.146240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ea22a0b-54d5-442d-bcf4-db85aada3f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259345A6EA0>]}
+[0m13:15:48.195067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6ea22a0b-54d5-442d-bcf4-db85aada3f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025932822030>]}
+[0m13:15:48.197185 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m13:15:48.322476 [debug] [MainThread]: checksum: 22ae401e7488ffb9755335d8734805631512a7879b47bda577b80f9132d64d3a, vars: {}, profile: retail_analytics, target: dev, version: 1.12.5
+[0m13:15:48.415368 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:15:48.415686 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:15:48.415888 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:15:48.423088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6ea22a0b-54d5-442d-bcf4-db85aada3f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025934E9F050>]}
+[0m13:15:48.524429 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\manifest.json
+[0m13:15:48.527110 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\semantic_manifest.json
+[0m13:15:48.552577 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\osi_document.json
+[0m13:15:48.577955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6ea22a0b-54d5-442d-bcf4-db85aada3f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025935132030>]}
+[0m13:15:48.578343 [info ] [MainThread]: Found 1 model, 8 data tests, 500 macros
+[0m13:15:48.583886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ea22a0b-54d5-442d-bcf4-db85aada3f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259351F6890>]}
+[0m13:15:48.585870 [info ] [MainThread]: 
+[0m13:15:48.587306 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:15:48.589089 [info ] [MainThread]: 
+[0m13:15:48.589764 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:15:48.596244 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_main'
+[0m13:15:48.635594 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m13:15:48.635900 [debug] [ThreadPool]: On list_retail_main: BEGIN
+[0m13:15:48.636086 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:15:48.648404 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m13:15:48.648720 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m13:15:48.648966 [debug] [ThreadPool]: On list_retail_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_retail_main"} */
+select
+      'retail' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail'
+  
+[0m13:15:48.651899 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m13:15:48.652857 [debug] [ThreadPool]: On list_retail_main: ROLLBACK
+[0m13:15:48.653346 [debug] [ThreadPool]: On list_retail_main: Close
+[0m13:15:48.654523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ea22a0b-54d5-442d-bcf4-db85aada3f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025935441980>]}
+[0m13:15:48.654857 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:15:48.655052 [debug] [MainThread]: On master: BEGIN
+[0m13:15:48.655216 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:15:48.655586 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:15:48.655775 [debug] [MainThread]: On master: COMMIT
+[0m13:15:48.655942 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:15:48.656128 [debug] [MainThread]: On master: COMMIT
+[0m13:15:48.656428 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:15:48.656611 [debug] [MainThread]: On master: Close
+[0m13:15:48.662885 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_retail_sales_category.86142c8a31
+[0m13:15:48.663225 [info ] [Thread-1 (]: 1 of 8 START test not_null_retail_sales_category ............................... [RUN]
+[0m13:15:48.664411 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.retail_analytics.not_null_retail_sales_category.86142c8a31'
+[0m13:15:48.664660 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_retail_sales_category.86142c8a31
+[0m13:15:48.676754 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_retail_sales_category.86142c8a31"
+[0m13:15:48.678754 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_retail_sales_category.86142c8a31
+[0m13:15:48.690390 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_retail_sales_category.86142c8a31"
+[0m13:15:48.691553 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_category.86142c8a31"
+[0m13:15:48.691866 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_category.86142c8a31: BEGIN
+[0m13:15:48.692087 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:15:48.692716 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.692968 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_category.86142c8a31"
+[0m13:15:48.693176 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_category.86142c8a31: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_retail_sales_category.86142c8a31"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select category
+from "retail"."main"."retail_sales"
+where category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.697594 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m13:15:48.701255 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_category.86142c8a31: ROLLBACK
+[0m13:15:48.701921 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_category.86142c8a31: Close
+[0m13:15:48.702533 [info ] [Thread-1 (]: 1 of 8 PASS not_null_retail_sales_category ..................................... [[32mPASS[0m in 0.04s]
+[0m13:15:48.704231 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_retail_sales_category.86142c8a31
+[0m13:15:48.704656 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_retail_sales_order_id.7d9016744d
+[0m13:15:48.704924 [info ] [Thread-1 (]: 2 of 8 START test not_null_retail_sales_order_id ............................... [RUN]
+[0m13:15:48.705621 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_retail_sales_category.86142c8a31, now test.retail_analytics.not_null_retail_sales_order_id.7d9016744d)
+[0m13:15:48.705858 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_retail_sales_order_id.7d9016744d
+[0m13:15:48.710044 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_retail_sales_order_id.7d9016744d"
+[0m13:15:48.710869 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_retail_sales_order_id.7d9016744d
+[0m13:15:48.713227 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_retail_sales_order_id.7d9016744d"
+[0m13:15:48.714808 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_order_id.7d9016744d"
+[0m13:15:48.715405 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_order_id.7d9016744d: BEGIN
+[0m13:15:48.715855 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:48.716694 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.717134 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_order_id.7d9016744d"
+[0m13:15:48.717364 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_order_id.7d9016744d: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_retail_sales_order_id.7d9016744d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "retail"."main"."retail_sales"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.718192 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.719178 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_order_id.7d9016744d: ROLLBACK
+[0m13:15:48.719562 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_order_id.7d9016744d: Close
+[0m13:15:48.720003 [info ] [Thread-1 (]: 2 of 8 PASS not_null_retail_sales_order_id ..................................... [[32mPASS[0m in 0.01s]
+[0m13:15:48.721302 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_retail_sales_order_id.7d9016744d
+[0m13:15:48.721868 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_retail_sales_product.4565e4878b
+[0m13:15:48.722119 [info ] [Thread-1 (]: 3 of 8 START test not_null_retail_sales_product ................................ [RUN]
+[0m13:15:48.722667 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_retail_sales_order_id.7d9016744d, now test.retail_analytics.not_null_retail_sales_product.4565e4878b)
+[0m13:15:48.722903 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_retail_sales_product.4565e4878b
+[0m13:15:48.726931 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_retail_sales_product.4565e4878b"
+[0m13:15:48.727995 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_retail_sales_product.4565e4878b
+[0m13:15:48.729743 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_retail_sales_product.4565e4878b"
+[0m13:15:48.730912 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_product.4565e4878b"
+[0m13:15:48.731345 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_product.4565e4878b: BEGIN
+[0m13:15:48.731674 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:48.732331 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.732664 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_product.4565e4878b"
+[0m13:15:48.732954 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_product.4565e4878b: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_retail_sales_product.4565e4878b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product
+from "retail"."main"."retail_sales"
+where product is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.733697 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.734679 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_product.4565e4878b: ROLLBACK
+[0m13:15:48.735068 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_product.4565e4878b: Close
+[0m13:15:48.735482 [info ] [Thread-1 (]: 3 of 8 PASS not_null_retail_sales_product ...................................... [[32mPASS[0m in 0.01s]
+[0m13:15:48.736504 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_retail_sales_product.4565e4878b
+[0m13:15:48.736759 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166
+[0m13:15:48.737193 [info ] [Thread-1 (]: 4 of 8 START test not_null_retail_sales_quantity ............................... [RUN]
+[0m13:15:48.737755 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_retail_sales_product.4565e4878b, now test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166)
+[0m13:15:48.737981 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166
+[0m13:15:48.742066 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166"
+[0m13:15:48.742862 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166
+[0m13:15:48.744090 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166"
+[0m13:15:48.744867 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166"
+[0m13:15:48.745159 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166: BEGIN
+[0m13:15:48.745404 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:48.745908 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:15:48.746139 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166"
+[0m13:15:48.746351 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quantity
+from "retail"."main"."retail_sales"
+where quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.747083 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:15:48.748075 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166: ROLLBACK
+[0m13:15:48.748485 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166: Close
+[0m13:15:48.748977 [info ] [Thread-1 (]: 4 of 8 PASS not_null_retail_sales_quantity ..................................... [[32mPASS[0m in 0.01s]
+[0m13:15:48.750870 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166
+[0m13:15:48.751140 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_retail_sales_store_code.ee53568f63
+[0m13:15:48.751494 [info ] [Thread-1 (]: 5 of 8 START test not_null_retail_sales_store_code ............................. [RUN]
+[0m13:15:48.752777 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_retail_sales_quantity.0ea07c1166, now test.retail_analytics.not_null_retail_sales_store_code.ee53568f63)
+[0m13:15:48.753017 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_retail_sales_store_code.ee53568f63
+[0m13:15:48.757537 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_retail_sales_store_code.ee53568f63"
+[0m13:15:48.758430 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_retail_sales_store_code.ee53568f63
+[0m13:15:48.759625 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_retail_sales_store_code.ee53568f63"
+[0m13:15:48.760364 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_store_code.ee53568f63"
+[0m13:15:48.760625 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_store_code.ee53568f63: BEGIN
+[0m13:15:48.760823 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:48.761287 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:15:48.761523 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_store_code.ee53568f63"
+[0m13:15:48.761829 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_store_code.ee53568f63: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_retail_sales_store_code.ee53568f63"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select store_code
+from "retail"."main"."retail_sales"
+where store_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.762683 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.763740 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_store_code.ee53568f63: ROLLBACK
+[0m13:15:48.764183 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_store_code.ee53568f63: Close
+[0m13:15:48.764674 [info ] [Thread-1 (]: 5 of 8 PASS not_null_retail_sales_store_code ................................... [[32mPASS[0m in 0.01s]
+[0m13:15:48.766662 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_retail_sales_store_code.ee53568f63
+[0m13:15:48.766978 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31
+[0m13:15:48.767264 [info ] [Thread-1 (]: 6 of 8 START test not_null_retail_sales_total_amount ........................... [RUN]
+[0m13:15:48.768264 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_retail_sales_store_code.ee53568f63, now test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31)
+[0m13:15:48.768514 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31
+[0m13:15:48.772565 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31"
+[0m13:15:48.773399 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31
+[0m13:15:48.774565 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31"
+[0m13:15:48.775440 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31"
+[0m13:15:48.775696 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31: BEGIN
+[0m13:15:48.775891 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:48.776343 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:15:48.776552 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31"
+[0m13:15:48.776739 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_amount
+from "retail"."main"."retail_sales"
+where total_amount is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.777475 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.778518 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31: ROLLBACK
+[0m13:15:48.779043 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31: Close
+[0m13:15:48.779487 [info ] [Thread-1 (]: 6 of 8 PASS not_null_retail_sales_total_amount ................................. [[32mPASS[0m in 0.01s]
+[0m13:15:48.780014 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31
+[0m13:15:48.780251 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20
+[0m13:15:48.780505 [info ] [Thread-1 (]: 7 of 8 START test not_null_retail_sales_unit_price ............................. [RUN]
+[0m13:15:48.780916 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_retail_sales_total_amount.0188b19d31, now test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20)
+[0m13:15:48.781115 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20
+[0m13:15:48.785368 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20"
+[0m13:15:48.786230 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20
+[0m13:15:48.787383 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20"
+[0m13:15:48.788136 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20"
+[0m13:15:48.788393 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20: BEGIN
+[0m13:15:48.788602 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:48.789048 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:15:48.789269 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20"
+[0m13:15:48.789461 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select unit_price
+from "retail"."main"."retail_sales"
+where unit_price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.790262 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:15:48.791277 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20: ROLLBACK
+[0m13:15:48.791720 [debug] [Thread-1 (]: On test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20: Close
+[0m13:15:48.792137 [info ] [Thread-1 (]: 7 of 8 PASS not_null_retail_sales_unit_price ................................... [[32mPASS[0m in 0.01s]
+[0m13:15:48.793274 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20
+[0m13:15:48.793517 [debug] [Thread-1 (]: Began running node test.retail_analytics.unique_retail_sales_order_id.73df1191ac
+[0m13:15:48.793770 [info ] [Thread-1 (]: 8 of 8 START test unique_retail_sales_order_id ................................. [RUN]
+[0m13:15:48.794295 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_retail_sales_unit_price.6c63765f20, now test.retail_analytics.unique_retail_sales_order_id.73df1191ac)
+[0m13:15:48.794534 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.unique_retail_sales_order_id.73df1191ac
+[0m13:15:48.800487 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.unique_retail_sales_order_id.73df1191ac"
+[0m13:15:48.801326 [debug] [Thread-1 (]: Began executing node test.retail_analytics.unique_retail_sales_order_id.73df1191ac
+[0m13:15:48.802519 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.unique_retail_sales_order_id.73df1191ac"
+[0m13:15:48.803439 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.unique_retail_sales_order_id.73df1191ac"
+[0m13:15:48.803735 [debug] [Thread-1 (]: On test.retail_analytics.unique_retail_sales_order_id.73df1191ac: BEGIN
+[0m13:15:48.803956 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:48.804452 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:15:48.804690 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.unique_retail_sales_order_id.73df1191ac"
+[0m13:15:48.804911 [debug] [Thread-1 (]: On test.retail_analytics.unique_retail_sales_order_id.73df1191ac: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.unique_retail_sales_order_id.73df1191ac"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "retail"."main"."retail_sales"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:15:48.818721 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m13:15:48.819900 [debug] [Thread-1 (]: On test.retail_analytics.unique_retail_sales_order_id.73df1191ac: ROLLBACK
+[0m13:15:48.820406 [debug] [Thread-1 (]: On test.retail_analytics.unique_retail_sales_order_id.73df1191ac: Close
+[0m13:15:48.820884 [info ] [Thread-1 (]: 8 of 8 PASS unique_retail_sales_order_id ....................................... [[32mPASS[0m in 0.03s]
+[0m13:15:48.821455 [debug] [Thread-1 (]: Finished running node test.retail_analytics.unique_retail_sales_order_id.73df1191ac
+[0m13:15:48.822542 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:15:48.822796 [debug] [MainThread]: On master: BEGIN
+[0m13:15:48.822989 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:15:48.823431 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:15:48.823667 [debug] [MainThread]: On master: COMMIT
+[0m13:15:48.823848 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:15:48.824028 [debug] [MainThread]: On master: COMMIT
+[0m13:15:48.824338 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:15:48.824555 [debug] [MainThread]: On master: Close
+[0m13:15:48.824832 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:15:48.825095 [debug] [MainThread]: Connection 'list_retail_main' was properly closed.
+[0m13:15:48.825262 [debug] [MainThread]: Connection 'test.retail_analytics.unique_retail_sales_order_id.73df1191ac' was properly closed.
+[0m13:15:48.825459 [info ] [MainThread]: 
+[0m13:15:48.825895 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 0.24 seconds (0.24s).
+[0m13:15:48.826996 [debug] [MainThread]: Command end result
+[0m13:15:48.854049 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\manifest.json
+[0m13:15:48.858224 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\semantic_manifest.json
+[0m13:15:48.864253 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\osi_document.json
+[0m13:15:48.873150 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Tarjani\OneDrive\Pictures\Documents\Notes_SEM5\DE\practical\practical4\dbt_project\target\run_results.json
+[0m13:15:48.873731 [info ] [MainThread]: 
+[0m13:15:48.875162 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:15:48.876194 [info ] [MainThread]: 
+[0m13:15:48.877195 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m13:15:48.878305 [debug] [MainThread]: Command `dbt test` succeeded at 13:15:48.878213 after 1.06 seconds
+[0m13:15:48.878560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025936659A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002593669AC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002593669A830>]}
+[0m13:15:48.878798 [debug] [MainThread]: Flushing usage events
+[0m13:15:50.088992 [debug] [MainThread]: An error was encountered while trying to flush usage events
