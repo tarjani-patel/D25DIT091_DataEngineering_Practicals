@@ -1,0 +1,68 @@
+
+services:
+  minio1:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    hostname: minio1
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_DISTRIBUTED_MODE_ENABLED: "yes"
+      MINIO_DISTRIBUTED_NODES: "minio{1...4}/bitnami/minio/data"
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: password123
+      MINIO_DATA_DIR: /bitnami/minio/data
+    volumes:
+      - ./data/minio1:/bitnami/minio/data
+    networks:
+      - minio-net
+
+  minio2:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    hostname: minio2
+    restart: unless-stopped
+    environment:
+      MINIO_DISTRIBUTED_MODE_ENABLED: "yes"
+      MINIO_DISTRIBUTED_NODES: "minio{1...4}/bitnami/minio/data"
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: password123
+      MINIO_DATA_DIR: /bitnami/minio/data
+    volumes:
+      - ./data/minio2:/bitnami/minio/data
+    networks:
+      - minio-net
+
+  minio3:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    hostname: minio3
+    restart: unless-stopped
+    environment:
+      MINIO_DISTRIBUTED_MODE_ENABLED: "yes"
+      MINIO_DISTRIBUTED_NODES: "minio{1...4}/bitnami/minio/data"
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: password123
+      MINIO_DATA_DIR: /bitnami/minio/data
+    volumes:
+      - ./data/minio3:/bitnami/minio/data
+    networks:
+      - minio-net
+
+  minio4:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    hostname: minio4
+    restart: unless-stopped
+    environment:
+      MINIO_DISTRIBUTED_MODE_ENABLED: "yes"
+      MINIO_DISTRIBUTED_NODES: "minio{1...4}/bitnami/minio/data"
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: password123
+      MINIO_DATA_DIR: /bitnami/minio/data
+    volumes:
+      - ./data/minio4:/bitnami/minio/data
+    networks:
+      - minio-net
+
+networks:
+  minio-net:
+    driver: bridge
