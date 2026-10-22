@@ -1,0 +1,30 @@
+[
+  {
+    "event": "HomePageVisit",
+    "user_id": "U1001",
+    "session_id": "S101",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-07-10T10:00:15Z"
+  },
+  {
+    "event": "ProductView",
+    "user_id": "U1001",
+    "product_id": "P201",
+    "session_id": "S101",
+    "timestamp": "2026-07-10T10:02:45Z"
+  },
+  {
+    "event": "AddToCart",
+    "user_id": "U1001",
+    "product_id": "P201",
+    "quantity": 1,
+    "timestamp": "2026-07-10T10:03:20Z"
+  },
+  {
+    "event": "Checkout",
+    "user_id": "U1001",
+    "payment_method": "Credit Card",
+    "timestamp": "2026-07-10T10:05:40Z"
+  }
+]

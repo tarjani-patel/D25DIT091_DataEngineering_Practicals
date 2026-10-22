@@ -1,0 +1,6 @@
+Timestamp,Warehouse,ProductID,AvailableStock,Event
+2026-07-10 09:00:00,Delhi,P201,50,Stock Received
+2026-07-10 10:30:00,Mumbai,P202,120,Stock Updated
+2026-07-10 11:15:00,Ahmedabad,P201,48,Order Fulfilled
+2026-07-10 12:00:00,Bangalore,P203,75,Stock Received
+2026-07-10 13:45:00,Delhi,P202,118,Order Fulfilled
